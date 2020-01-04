@@ -62,6 +62,7 @@ android_library {
     resource_dirs: [
         "res",
         "SuperiorLab/res",
+        "TouchGestures/res"
     ],
 
     static_libs: [

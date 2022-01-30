@@ -444,5 +444,8 @@
     <string name="notification_custom_vibrate_summary">Replaces the default pattern only\nApp set pattern takes precedence</string>
     <string name="notification_custom_vibrate_slider1">Vibrate for</string>
     <string name="notification_custom_vibrate_slider2">Pause for</string>
+    
+    <!-- Name of Refresh Rate controls category in Display Settings [CHAR LIMIT=none] -->
+    <string name="category_name_refresh_rate_controls">Refresh Rate</string>
 
 </resources>

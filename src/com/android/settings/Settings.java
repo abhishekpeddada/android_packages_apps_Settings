@@ -459,4 +459,7 @@ public class Settings extends SettingsActivity {
     public static class PreviouslyConnectedDevicesActivity extends SettingsActivity { /* empty */ }
 
     public static class DevRunningServicesActivity extends SettingsActivity { /* empty */ }
+
+    // SleepMode
+    public static class SleepModeActivity extends SettingsActivity {}
 }

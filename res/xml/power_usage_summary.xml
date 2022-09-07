@@ -28,6 +28,12 @@
         settings:controller="com.android.settings.fuelgauge.BatteryHeaderPreferenceController" />
 
     <com.android.settingslib.widget.LayoutPreference
+        android:key="battery_stat"
+        android:layout="@layout/preference_battery_stat"
+        android:selectable="false"
+        settings:searchable="false" />
+
+    <com.android.settingslib.widget.LayoutPreference
         android:key="battery_help_message"
         android:layout="@layout/preference_battery_error"
         android:selectable="false"
@@ -70,11 +76,6 @@
         android:summary="@string/high_power_apps_summary">
         <intent android:action="android.settings.IGNORE_BATTERY_OPTIMIZATION_SETTINGS" />
     </Preference>
-
-    <com.android.settings.fuelgauge.batteryusage.PowerGaugePreference
-        android:key="battery_temperature"
-        android:title="@string/battery_temperature"
-        android:selectable="false" />
 
     <SwitchPreference
         android:key="low_battery_light_enabled"

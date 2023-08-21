@@ -241,22 +241,24 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
             if (key.equals("top_level_network")
             	|| key.equals("top_level_display")
             	|| key.equals("top_level_apps")
-            	|| key.equals("top_level_accessibility")
-            	|| key.equals("top_level_emergency")){
+            	|| key.equals("top_level_sound")
+            	|| key.equals("top_level_location")
+				|| key.equals("top_level_battery")
+				|| key.equals("top_level_security")
+				|| key.equals("top_level_system")
+				|| key.equals("top_level_wellbeing")){
                 preference.setLayoutResource(R.layout.superioros_dashboard_preference_top);
-            } else if (key.equals("top_level_battery")
-            	|| key.equals("top_level_security")
-            	|| key.equals("top_level_privacy")
-            	|| key.equals("top_level_storage")
-            	|| key.equals("top_level_system")
-                || key.equals("top_level_accounts")
-                || key.equals("dashboard_tile_pref_com.google.android.apps.wellbeing.settings.TopLevelSettingsActivity")
-            	|| key.equals("dashboard_tile_pref_com.google.android.apps.wellbeing.home.TopLevelSettingsActivity")
-            	|| key.equals("top_level_wellbeing")
-            	|| key.equals("top_level_notifications")){
+            } else if (key.equals("dashboard_tile_pref_com.google.android.apps.wellbeing.settings.TopLevelSettingsActivity")
+            	|| key.equals("dashboard_tile_pref_com.google.android.apps.wellbeing.home.TopLevelSettingsActivity")){
                 preference.setLayoutResource(R.layout.superioros_dashboard_preference_middle);
             } else if (key.equals("dashboard_tile_pref_com.google.android.gms.app.settings.GoogleSettingsIALink")
-            	|| key.equals("top_level_google")){
+            	|| key.equals("top_level_google")
+				|| key.equals("top_level_notifications")
+				|| key.equals("top_level_storage")
+				|| key.equals("top_level_accessibility")
+				|| key.equals("top_level_privacy")
+				|| key.equals("top_level_emergency")
+				|| key.equals("top_level_accounts")){
                 preference.setLayoutResource(R.layout.superioros_dashboard_preference_bottom);
                 gAppsExists = true;
             } else if (key.equals("top_level_accounts") && gAppsExists){
